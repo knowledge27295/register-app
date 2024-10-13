@@ -29,20 +29,7 @@ pipeline {
        stage("Test Application"){
            steps {
                  sh "mvn test"
-           }
-       }
-
-       
-
-     
-                    sh "docker rmi ${IMAGE_NAME}:latest"
-               }
-          }
-       }
-
-       stage("Trigger CD Pipeline") {
-            steps {
-                script {
+        }
        
       }      
    }
